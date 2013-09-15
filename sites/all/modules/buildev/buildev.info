@@ -1,0 +1,4 @@
+name = buildftw dev
+description = general tweaks for buildftw.org
+package = Custom
+core = 7.x

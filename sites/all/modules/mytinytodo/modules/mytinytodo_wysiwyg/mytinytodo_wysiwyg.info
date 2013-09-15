@@ -1,0 +1,11 @@
+name = myTinyTodo Wysiwyg
+description = Enable a Wysiwyg editor for the todo notes
+package = myTinyTodo
+core = 7.x
+
+; Information added by drupal.org packaging script on 2013-02-26
+version = "7.x-1.0"
+core = "7.x"
+project = "mytinytodo"
+datestamp = "1361902243"
+

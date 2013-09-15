@@ -1,0 +1,4 @@
+<p><?php print render($terms_text); ?></p>
+<div class="theme_the_world-user-register-form-wrapper">
+	<?php print drupal_render_children($form) ?>
+</div>

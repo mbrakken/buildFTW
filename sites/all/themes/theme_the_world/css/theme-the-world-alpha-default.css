@@ -1,0 +1,25 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+
+html.js body.html div#page.page section#section-content.section div#zone-content-wrapper.zone-wrapper div#zone-content.zone div#region-content.grid-12 div.region-inner div#block-system-main.block div.block-inner div.content div.view div.view-content div.openlayers-views-map {
+	border:10px solid #545454; 
+}
+
+.openlayers-container {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Map outline */
+.openlayers-container {
+	border:10px solid #545454; 
+	border-radius:10px;
+	-moz-border-radius:10px; /* Firefox 3.6 and earlier */
+	margin-bottom:10px;
+}
+
+#popup_contentDiv a {
+	color:#7ECB3D;
+}
+
+#page #section-content #zone-content-wrapper #zone-content #region-content .region-inner #block-system-main .content .view-frontpage.map .view-content .openlayers-views-map .openlayers-container .openlayers-container-map-all_data_map .openlayers-map-all_data_map #OpenLayers.Map_2_OpenLayers_ViewPort

@@ -1,0 +1,4 @@
+<p><?php print render($intro_text); ?></p>
+<div class="theme_the_world-user-login-form-wrapper">
+	<?php print drupal_render_children($form) ?>
+</div>

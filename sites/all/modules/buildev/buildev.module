@@ -1,0 +1,59 @@
+<?php
+
+//print '<pre>';
+//print_r($links);
+//print '</pre>';
+
+// hook_menu_alter
+
+// hook_form_alter
+ 
+function buildev_form_alter(&$form, &$form_state, $form_id) {
+	if($form_id == 'project_node_form'){
+//		print '<pre>';
+//		print_r($form);
+//		print '</pre>';
+    	$node = $form_state['node'];
+// Makes form to add a new project smaller while keeping edit project full
+    	if (!isset($node->nid) || isset($node->is_new)) {
+			$form['title']['#title'] = 'Project name';
+			$form['field_donate_link']['#access'] = 0;
+			$form['field_project_website']['#access'] = 0;
+			$form['field_project_hypothesis']['#access'] = 0;
+			$form['field_project_problem']['#access'] = 0;
+			$form['field_project_assets']['#access'] = 0;
+			$form['field_goals']['#access'] = 0;
+			$form['field_project_fund']['#access'] = 0;
+			$form['body']['#access'] = 0;
+			$form['field_start_date']['#access'] = 0;
+			$form['field_project_keywords']['#access'] = 0;
+		}
+//		$form['field_project_short_description']['#type'] = 'textarea';
+//		$form['field_project_short_description']['#title'] = 'Short description';
+		$form['field_have_address'] = array(
+			'#title' => 'Does your project have an address?',
+			'#type' => 'radios',
+			'#options' => array('yes' => t('Yes'), 'no' => t('No')),
+			'#required' => FALSE,
+			'#weight' => 3,
+		);
+		$form['field_community']['#access'] = 0;
+		$form['group_group']['#access'] = 0;
+		$form['field_project_type']['#access'] = 0;
+		$form['field_project_address']['#weight'] = 4;
+		$form['field_project_address']['#states'] = array(
+			'visible' => array(
+				':input[name="field_have_address"]' => array(
+					'value' => 'yes'
+				),
+			),
+		);
+		$form['field_project_map_alt']['#states'] = array(
+			'visible' => array(
+				':input[name="field_have_address"]' => array(
+					'value' => 'no'
+				),
+			),
+		);
+	}
+}	
