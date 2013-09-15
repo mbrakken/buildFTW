@@ -90,22 +90,18 @@ function google_webfont_loader_api_init() {
 }
 
 /**
- * Retrieve the list of fonts available.
- * I am unsure of how expensive a call to drupal_system_listing is.  As such, I
- * am storing the font
+ * Retrieve the list of available fonts.
  */
 function google_webfont_loader_api_get_font_list($reset = FALSE) {
-  $listings = cache_get('google_webfont_loader_api_font_list');
-  if ($reset || !$listings) {
+  if ($reset) {
     $listings = drupal_system_listing('/\.fontinfo$/', '');
     $font_list = array();
     foreach ($listings as $key => $listing) {
       $listing->info = drupal_parse_info_file($listing->uri);
     }
-    cache_set('google_webfont_loader_api_font_list', $listings);
   }
   else {
-    $listings = $listings->data;
+    $listings = variable_get('google_webfont_loader_api_fontinfo_listing', array());
   }
   return $listings;
 }
@@ -189,8 +185,8 @@ function _google_webfont_loader_api_load_font($font_info, $filepath = 'public://
   if (count($loader_js) > 0) {
     if (!$run_once) {
       // First deal with the webfont.js file.
-      $webfont_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://') . "ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
-      if (variable_get('google_webfont_loader_api_cache', 0) && file_default_scheme() == 'public' && $source = _google_webfont_loader_api_cache($webfont_url)) {
+      $webfont_url = "//ajax.googleapis.com/ajax/libs/webfont/1.4.8/webfont.js";
+      if (variable_get('google_webfont_loader_api_cache', 0) && file_default_scheme() == 'public' && $source = _google_webfont_loader_api_cache('http:' . $webfont_url)) {
         drupal_add_js($source);
       }
       else {

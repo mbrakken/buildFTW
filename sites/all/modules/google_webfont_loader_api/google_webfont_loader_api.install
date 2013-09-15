@@ -6,6 +6,14 @@
  */
 
 /**
+ * Implements hook_install().
+ */
+function google_webfont_loader_api_install() {
+  $fontinfo_list = google_webfont_loader_api_get_font_list(TRUE);
+  variable_set('google_webfont_loader_api_fontinfo_listing', $fontinfo_list);
+}
+
+/**
  * Implements hook_uninstall().
  */
 function google_webfont_loader_api_uninstall() {
@@ -24,4 +32,11 @@ function google_webfont_loader_api_update_7000() {
     $font_list = array($font_list => $font_list);
     variable_set('google_webfont_loader_api_font', $font_list);
   }
+}
+
+/**
+ * Sets the fontinfo listing variable.
+ */
+function google_webfont_loader_api_update_7001() {
+  google_webfont_loader_api_install();
 }

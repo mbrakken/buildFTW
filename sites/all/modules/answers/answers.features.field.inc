@@ -10,7 +10,7 @@
 function answers_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-answer-body'
+  // Exported field: 'node-answer-body'.
   $fields['node-answer-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function answers_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
@@ -49,7 +50,7 @@ function answers_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -84,7 +85,7 @@ function answers_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-answer-field_answer_question'
+  // Exported field: 'node-answer-field_answer_question'.
   $fields['node-answer-field_answer_question'] = array(
     'field_config' => array(
       'active' => '1',
@@ -105,6 +106,7 @@ function answers_field_default_fields() {
           0 => 'nid',
         ),
       ),
+      'locked' => '0',
       'module' => 'node_reference',
       'settings' => array(
         'referenceable_types' => array(
@@ -129,10 +131,11 @@ function answers_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
+          'module' => 'node_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '1',
+          'type' => 'node_reference_default',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -143,7 +146,7 @@ function answers_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_answer_question',
-      'label' => 'Question',
+      'label' => 'Answer to the question',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -164,12 +167,12 @@ function answers_field_default_fields() {
           ),
         ),
         'type' => 'nodereference_url',
-        'weight' => '0',
+        'weight' => 0,
       ),
     ),
   );
 
-  // Exported field: 'node-question-body'
+  // Exported field: 'node-question-body'.
   $fields['node-question-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -192,6 +195,7 @@ function answers_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
@@ -243,7 +247,7 @@ function answers_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-question-field_answer_count'
+  // Exported field: 'node-question-field_answer_count'.
   $fields['node-question-field_answer_count'] = array(
     'field_config' => array(
       'active' => '1',
@@ -253,6 +257,7 @@ function answers_field_default_fields() {
       'field_name' => 'field_answer_count',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'nodereference_count',
       'settings' => array(),
       'translatable' => '1',
@@ -265,7 +270,7 @@ function answers_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '2',
@@ -298,7 +303,7 @@ function answers_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-question-field_notify_p'
+  // Exported field: 'node-question-field_notify_p'.
   $fields['node-question-field_notify_p'] = array(
     'field_config' => array(
       'active' => '1',
@@ -312,6 +317,7 @@ function answers_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -334,7 +340,7 @@ function answers_field_default_fields() {
       'description' => 'Would you like to receive notifications by email when users post answers to your question?',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '1',
@@ -365,7 +371,7 @@ function answers_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-question-field_question_locked_p'
+  // Exported field: 'node-question-field_question_locked_p'.
   $fields['node-question-field_question_locked_p'] = array(
     'field_config' => array(
       'active' => '1',
@@ -379,6 +385,7 @@ function answers_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -401,7 +408,7 @@ function answers_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'inline',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '3',
@@ -435,9 +442,9 @@ function answers_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Answer Count');
+  t('Answer to the question');
   t('Description');
   t('Notify on Answer');
-  t('Question');
   t('Question Locked');
   t('Would you like to receive notifications by email when users post answers to your question?');
 

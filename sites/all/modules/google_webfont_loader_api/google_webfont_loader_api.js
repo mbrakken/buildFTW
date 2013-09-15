@@ -7,7 +7,11 @@
   Drupal.behaviors.google_webfont_loader = {
     attach: function() {
       $('body').once('google-webfont-loader', function() {
-        WebFont.load(Drupal.settings.google_webfont_loader_api_setting);
+        try {
+          WebFont.load(Drupal.settings.google_webfont_loader_api_setting);
+        } catch(err) {
+          console.log('Webfont Library has not loaded. Check that you are connected to the internet.');
+        }
       });
       // Remove the wf-loading class after a few seconds. This is to make sure
       // that your content is not forever hidden from being displayed in the
