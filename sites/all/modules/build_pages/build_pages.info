@@ -1,0 +1,4 @@
+name = Build Pages
+description = Ctools pages for buildftw
+package = Custom
+core = 7.x
