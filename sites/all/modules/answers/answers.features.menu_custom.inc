@@ -10,7 +10,7 @@
 function answers_menu_default_menu_custom() {
   $menus = array();
 
-  // Exported menu: menu-using-answers
+  // Exported menu: menu-using-answers.
   $menus['menu-using-answers'] = array(
     'menu_name' => 'menu-using-answers',
     'title' => 'Using Answers',

@@ -11,6 +11,10 @@
 function google_webfont_loader_api_site_settings($form_state = array()) {
   $form = array();
   $listing = google_webfont_loader_api_get_font_list(TRUE);
+  $form['google_webfont_loader_api_fontinfo_listing'] = array(
+    '#type' => 'value',
+    '#value' => $listing,
+  );
   foreach ($listing as $list_item) {
     $fonts[$list_item->name] = check_plain($list_item->info['name']);
   }
