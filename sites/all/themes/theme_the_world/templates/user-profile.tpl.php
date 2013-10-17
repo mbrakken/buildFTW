@@ -32,7 +32,7 @@
  * @see template_preprocess_user_profile()
  */
 ?>
-<?php //print_r($user_profile); ?>
+<?php // print_r($user_profile); ?>
 <div class="profile"<?php print $attributes; ?>>
 	<div id="user-bar">
 		<?php if (isset($user_profile['user_picture']['#markup'])): ?>
@@ -49,12 +49,9 @@
 			</h1>
 			<?php if (isset($user_profile['field_offer_training'])): ?>
 				<div id="user_training"><?php print['field_offer_training'] ?></div>
+      <?php endif; ?>
 			<div id="user-desc">
 				<p><?php print $user_profile['field_ind_descr'][0]['#markup']; ?></p>
-			</div>
-			<a href="http://twitter.com/<?php print $user_profile['field_ind_twitter_id']['twitter_user_name']; ?>">
-				<?php print $user_profile['field_ind_twitter_id'][0]['#markup']; ?>
-			</a>
 			</div>
 		</div>
 	</div>
