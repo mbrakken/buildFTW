@@ -3,13 +3,13 @@
 $handler = new stdClass();
 $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
 $handler->api_version = 1;
-$handler->name = 'node_view_panel_context_4';
+$handler->name = 'node_view_panel_context';
 $handler->task = 'node_view';
 $handler->subtask = '';
 $handler->handler = 'panel_context';
-$handler->weight = 3;
+$handler->weight = 0;
 $handler->conf = array(
-  'title' => 'Project Profiles',
+  'title' => 'Project profiles',
   'no_blocks' => 1,
   'pipeline' => 'standard',
   'css_id' => 'project_profile',
@@ -53,7 +53,7 @@ $display->layout_settings = array(
     ),
     'main' => array(
       'type' => 'column',
-      'width' => '75',
+      'width' => '74.99919078902148',
       'width_type' => '%',
       'children' => array(
         0 => 1,
@@ -99,7 +99,7 @@ $display->layout_settings = array(
     ),
     3 => array(
       'type' => 'column',
-      'width' => '25',
+      'width' => '25.000809210978527',
       'width_type' => '%',
       'parent' => 'canvas',
       'children' => array(
@@ -670,7 +670,7 @@ $display->panels = array();
     'logic' => 'or',
   );
   $pane->configuration = array(
-    'context' => 'relationship_og_group_from_node_1',
+    'context' => 'argument_entity_id:node_1',
     'override_title' => 1,
     'override_title_text' => '<no title>',
     'types' => array(
@@ -679,6 +679,7 @@ $display->panels = array();
       'shared_assets' => 'shared_assets',
       'todo_list' => 'todo_list',
     ),
+    'field_name' => 'og_group_ref',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -721,5 +722,3 @@ $display->panels = array();
 $display->hide_title = PANELS_TITLE_NONE;
 $display->title_pane = '0';
 $handler->conf['display'] = $display;
-
-?>

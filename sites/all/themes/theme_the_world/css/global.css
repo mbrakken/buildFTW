@@ -4,61 +4,6 @@
 
 /* ***** PRELIMINARY VERSION ***** */
 
-body {
-	background-color: #fafafa;
-	font-family: 'Helvetica';
-	color: #333;
-}
-
-h1 {
-	font-size: 2.5em;
-}
-
-#zone-user-wrapper {
-	background: #1e1e1e;
-	padding: 7px 0;
-}
-
-#zone-user-wrapper a {
-	text-decoration: none;
-	color: white;
-}
-
-#block-logintoboggan-logintoboggan-logged-in {
-	float: right;
-}
-
-#block-system-user-menu {
-	float: left;
-}
-
-#block-system-user-menu li {
-	display: inline;
-	list-style-type: none;
-}
-
-#zone-menu {
-	padding: 10px 0;
-}
-
-#zone-menu li {
-	list-style-type: none;
-	display: inline;
-}
-
-#zone-menu a {
-	text-decoration: none;
-}
-
-#block-sustem-main-menu {
-	float: left;
-}
-
-#block-search-form {
-	float: right;
-}
-
-/*
 @font-face{
 	font-family:'Comfortaa';
 	font-family: 'Cabin';
@@ -104,11 +49,9 @@ a {
 a:hover {
 	color:#7ecb3d;
 }
-*/
 
 /* ************************** USER BAR ******************************* */
 
-/*
 #zone-user-wrapper{
 	background-color:#7ECB3D;
 	padding:3px 0;
@@ -154,19 +97,16 @@ a:hover {
 	float:right;
 	padding-left:0;
 }
-*/
 
 /* ****************************** BRANDING (currently empty) ************************ */
 
-/*
 #zone-branding-wrapper{
 	background-color:#545454;
 }
-*/
 
 /* ***** MAIN MENU ***** */
 
-/*
+
 #zone-menu-wrapper {
 	background-color:#545454;
 	padding:5px 0;
@@ -217,11 +157,9 @@ div#block-system-main-menu ul.menu a.active {
 div#block-search-form {
 	float: right;
 }
-*/
 
 /* ************************ SUBMENU ********************************** */
 
-/*
 div#zone-submenu {
 	border-bottom-style: dotted;
 	border-color:#545454;
@@ -249,11 +187,10 @@ div#zone-submenu {
 #zone-submenu-wrapper .menu li .active{
 	color:#7ecb3d;
 }
-*/
+
 
 /* **************************** BREADCRUMB ********************************** */
 
-/*
 #breadcrumb li{
 	display:inline-block;
 	padding:4px 6px 2px 6px;
@@ -271,11 +208,9 @@ div#zone-submenu {
 #breadcrumb li.last:after{
 	content: none;
 }
-*/
 
 /* **************************** FRONT PAGE ********************************* */
 
-/*
 .front #zone-content {
 	margin-left:0;
 	margin-right:0;
@@ -345,11 +280,9 @@ div.openlayers-views-map {
 	line-height:1.1em;
 	color:#8a3dcb;
 }
-*/
 
 /* ******************************* POSTSCRIPT ****************************** */
 
-/*
 #zone-postscript-wrapper {
 	padding-bottom:20px;
 }
@@ -376,11 +309,9 @@ div.openlayers-views-map {
 	box-shadow: 0px 0px 5px 3px #cacaca;
 	border-radius:3px;
 }
-*/
 
 /* ***** FOOTER ***** */
 
-/*
 footer#section-footer{
 	background-color:#545454;
 	padding-bottom:0;
@@ -429,44 +360,29 @@ div#block-block-11 {
 #google_translate_element div{
 	color:white;
 }
-*/
 
-/* ************************ GENERAL FORM STUFF *************************** */
-
-
-
-/* ************************ LOGIN FORMS ********************************* */
-
-
-
-/* ********************   form to create a project   ************************ */
-
-
-/* ************************** PROJECT CONTENT ***************************** */
-
-/*
 .edit-field-tags-und-autocomplete-aria-live{
 	top:10px;
 }
 
+/* tabs */
+
 .tabs li a {
 	color:#191919;
 }
-*/
 
 /* *********** PROJECT PROFILE PAGES AND RELATED BITS  ********* */
 
-/*
+
 .node-type-project #page-title{
 	font-size:2.4em;
 	padding:10px;
 }
-*/
+
 
 
 /* *** SIDEBAR ***  */
 
-/*
 #project-profile-map {
 	border:solid 2px #545454;
 	border-radius:3px;
@@ -524,11 +440,10 @@ div.field-name-field-project-assets .field-item{
 div.pane-node-flag-follow-group-count{
 	clear: left;
 }
-*/
 
 /* ***** MAIN PROJECT CONTENT *****  */
 
-/*
+
 div.proj-button{
 	display:inline-block;
 	position:relative;
@@ -548,15 +463,16 @@ div.pane-entity-field.proj-button {
 	border-radius:3px;
 	margin:12px 25px 0 0;
 	box-shadow: 0 2px 5px 0 #767676;
-	background: #8bff51;
+	background: #8bff51; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhiZmY1MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iIzgwZWE0YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU2JSIgc3RvcC1jb2xvcj0iIzc2YzkyZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMmEwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top, #8bff51 0%, #80ea4b 28%, #76c92e 56%, #22a000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bff51), color-stop(28%,#80ea4b), color-stop(56%,#76c92e), color-stop(100%,#22a000));
-	background: -webkit-linear-gradient(top, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%);
-	background: -o-linear-gradient(top, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%);
-	background: -ms-linear-gradient(top, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%);
-	background: linear-gradient(to bottom, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bff51', endColorstr='#22a000',GradientType=0 );
+	background: -moz-linear-gradient(top, #8bff51 0%, #80ea4b 28%, #76c92e 56%, #22a000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bff51), color-stop(28%,#80ea4b), color-stop(56%,#76c92e), color-stop(100%,#22a000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #8bff51 0%,#80ea4b 28%,#76c92e 56%,#22a000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bff51', endColorstr='#22a000',GradientType=0 ); /* IE6-8 */
 }
 
 .proj-button .field-type-list-boolean .form-item{
@@ -564,15 +480,16 @@ div.pane-entity-field.proj-button {
 	text-align:center;
 	padding:5px 0;
 	width:90px;
-	background: #545454;
+	background: #545454; /* Old browsers */
+	* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E1YTVhNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIyJSIgc3RvcC1jb2xvcj0iIzdhN2E3YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU2JSIgc3RvcC1jb2xvcj0iIzU5NTk1OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYjJiMmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top, #a5a5a5 0%, #7a7a7a 22%, #595959 56%, #2b2b2b 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5a5a5), color-stop(22%,#7a7a7a), color-stop(56%,#595959), color-stop(100%,#2b2b2b));
-background: -webkit-linear-gradient(top, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%);
-background: -o-linear-gradient(top, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%);
-background: -ms-linear-gradient(top, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%);
-background: linear-gradient(to bottom, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#2b2b2b',GradientType=0 );
+background: -moz-linear-gradient(top, #a5a5a5 0%, #7a7a7a 22%, #595959 56%, #2b2b2b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5a5a5), color-stop(22%,#7a7a7a), color-stop(56%,#595959), color-stop(100%,#2b2b2b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%); /* IE10+ */
+background: linear-gradient(to bottom, #a5a5a5 0%,#7a7a7a 22%,#595959 56%,#2b2b2b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-8 */
 	color:#7ecb3d;
 	border-radius:3px;
 	margin:12px 25px 0 0;
@@ -589,17 +506,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', end
 }
 
 .proj-button a:hover{
-	background: #545454;
+	background: #545454; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdhN2E3YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYTNhM2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top, #7a7a7a 0%, #3a3a3a 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7a7a7a), color-stop(100%,#3a3a3a));
-	background: -webkit-linear-gradient(top, #7a7a7a 0%,#3a3a3a 100%);
-	background: -o-linear-gradient(top, #7a7a7a 0%,#3a3a3a 100%);
-	background: -ms-linear-gradient(top, #7a7a7a 0%,#3a3a3a 100%);
-	background: linear-gradient(top bottom, #7a7a7a 0%,#3a3a3a 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7a7a', endColorstr='#3a3a3a',GradientType=0 );
+	background: -moz-linear-gradient(top, #7a7a7a 0%, #3a3a3a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7a7a7a), color-stop(100%,#3a3a3a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7a7a7a 0%,#3a3a3a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7a7a7a 0%,#3a3a3a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7a7a7a 0%,#3a3a3a 100%); /* IE10+ */
+	background: linear-gradient(top bottom, #7a7a7a 0%,#3a3a3a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7a7a', endColorstr='#3a3a3a',GradientType=0 ); /* IE6-8 */
 }
-
 
 #project_profile div.pane-delta-blocks-page-title{
 	position: relative;
@@ -702,19 +619,17 @@ div.pane-quicktabs-reports{
 #quicktabs-container-reports {
 	padding:15px;
 }
-*/
 
 /* ***** LOG BOOK UPDATE ***** */
 
-/*
 #project_profile div.view-statuses-stream .views-field {
 	background-color:white;
 	padding:7px 0;
 }
 
 .statuses-media > .user-picture {
-  float: left;
-  margin-right: 10px;
+  float: left; /* LTR */
+  margin-right: 10px; /* LTR */
 }
 
 .statuses-media > .content {
@@ -894,11 +809,9 @@ div.pane-quicktabs-reports{
 .reports-item .reports-tags a:hover{
 	background-color: #dddddd;
 }
-*/
 
 /* ***** PROJECTS VIEW PAGE ***** */
 
-/*
 .page-projects h1{
 	display:none;
 }
@@ -957,7 +870,6 @@ div.pane-quicktabs-reports{
 
 .page-projects #section-content .views-field-field-site-categories {
 	text-align:center;
-	/*background:#d0ecb9;*/
 	background:#fafafa;
 	border-radius:0 0 3px 3px;
 	padding:3px;
@@ -966,11 +878,9 @@ div.pane-quicktabs-reports{
 .page-projects #section-content .views-field-field-site-categories a{
 	text-decoration:none;
 }
-*/
 
 /* ********** PROJECTS LIST PAGE SIDEBAR ************* */
 
-/*
 .page-projects .region-sidebar-first {
 	margin-top:10px;
 	background:white;
@@ -1031,11 +941,10 @@ div.pane-quicktabs-reports{
 input#edit-field-project-address-locality {
 	width:100%;
 }
-*/
+
 
 /* ***** QUESTIONS AND ANSWERS ***** */
 
-/*
 .context-questions .zone-content-wrapper h1{
 	font-size:1.4em;
 	line-height:1.3em;
@@ -1049,14 +958,13 @@ input#edit-field-project-address-locality {
 	margin:10px 0;
 	outline: 1px solid;
 }
-*/
 
 /*  ***************  main list view *****************************   */
 
-/*
 .context-questions .views-submit-button{
 	top:-28px;
 	padding:6px;
+
 }
 
 .context-questions .zone-content-wrapper .views-field {
@@ -1123,28 +1031,26 @@ input#edit-field-project-address-locality {
     padding: 10px 0;
     border-top: dotted 1px #545454;
 }
-*/
 
 /* ***** PROJECT CONTENT ***** */
 
-/*
 #page {
   overflow-y: hidden;
 }
 
 html.js input.form-autocomplete {
 
-  background-position: 100% 10px;
+  background-position: 100% 10px; /* LTR */
   background-repeat: no-repeat;
 }
 html.js input.throbbing {
-  background-position: 100% -11px;
+  background-position: 100% -11px; /* LTR */
 }
-*/
+
 
 /* ************** GENERAL FORMS STUFF ******************* */
 
-/*
+
 .form-item label,
 div.ctools-modal-content .form-item label {
 	width: 6em;
@@ -1222,6 +1128,8 @@ div.form-type-managed-file div.description {
 	padding-left: 9.8em !important;
 }
 
+/*textarea,
+select,*/
 input[type="text"],
 input[type="password"],
 div.field-type-addressfield select {
@@ -1301,11 +1209,11 @@ input[type="submit"],
 	margin:0 3px;
 	color: #545454;
 	background: -moz-linear-gradient(center top , #FFFFFF 0%, #DDDDDD 100%) repeat scroll 0 0 transparent;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DDDDDD));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DDDDDD)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%);  Chrome10+,Safari5.1+
-	background: -o-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%);
-	background: -ms-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%);
-	background: linear-gradient(top bottom, #FFFFFF 0%,#DDDDDD 100%);
+	background: -o-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%); /* IE10+ */
+	background: linear-gradient(top bottom, #FFFFFF 0%,#DDDDDD 100%); /* W3C */
 	font-family:'Comfortaa','Trebuchet MS','Lucida Sans Unicode',sans-serif;
 	font-size: 1em;
 	text-decoration: none;
@@ -1317,11 +1225,11 @@ input[type="submit"],
 input[type="submit"]:hover,
 .form-managed-file .form-submit:hover {
 	background: -moz-linear-gradient(center top , #FFFFFF 0%, #AAAAAA 100%) repeat scroll 0 0 transparent;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#AAAAAA));
-	background: -webkit-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%);
-	background: -o-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%);
-	background: -ms-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%);
-	background: linear-gradient(top bottom, #FFFFFF 0%,#AAAAAA 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#AAAAAA)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%); /* IE10+ */
+	background: linear-gradient(top bottom, #FFFFFF 0%,#AAAAAA 100%); /* W3C */
 }
 
 .form-managed-file .form-file {
@@ -1352,11 +1260,9 @@ div#edit-field-cc-license > div.form-item > label {
 div#edit-group-audience {
 	clear: left;
 }
-*/
 
 /* ************** CTOOLS AUTOMODAL FORMS ******************* */
 
-/*
 div.ctools-modal-content {
 	overflow: hidden;
 	width: auto;
@@ -1450,11 +1356,9 @@ div.openlayers-container-map-place-picker-map {
 div#edit-field-partner-email {
 	display: none;
 }
-*/
 
 /* ********************** ANY OTHER FORM STUFF ************************** */
 
-/*
 textarea.statuses-submit {
 	min-height: 37px;
 }
@@ -1484,11 +1388,9 @@ input.statuses-submit:hover,
 .fbss-comments-form .form-submit:hover {
 	background: url(../images/comment_dk.png) no-repeat center;
 }
-*/
 
 /* ************************ USER PROFILES **************************** */
 
-/*
 div#user-profile-page {
 	margin-top: 20px;
 }
@@ -1582,4 +1484,3 @@ div.pane-view-user-content {
 	background: white;
 	box-shadow: 2px 2px 8px 3px #CACACA;;
 }
-*/
