@@ -225,28 +225,31 @@ div#zone-submenu {
 }
 
 .front-top {
-	padding: 2em;
+	margin: 2em auto;
+	padding-bottom: 2em;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
 	font-size: 3em;
 	margin-bottom: 2em;
+	width: 90%;
+	max-width: 750px;
 }
 
 .front-top p {
-	font-size: 55px;
+	font-size: 40px;
 }
 
 
 .front-top a {
 	background-color: #1faffa; /* rgb(31, 175, 250) */
-	padding: 0 2em;
+	padding: 0.2em 1em;
 	font-size: 35px;
 	color: white;
 	text-decoration: none;
 	position: absolute;
-	right: 130px;
+	right: 10px;
 }
 
 .front-top a:hover {
@@ -257,7 +260,7 @@ div#zone-submenu {
 	float: left;
 	width: 33%;
 	margin: 0 auto;
-	padding: 0 3em;
+	padding: 0 2%;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
