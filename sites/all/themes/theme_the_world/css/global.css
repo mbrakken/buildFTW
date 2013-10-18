@@ -214,7 +214,6 @@ div#zone-submenu {
 .front #zone-content {
 	margin-left:0;
 	margin-right:0;
-	margin-top:50px;
 	margin-bottom:20px;
 	width:100%;
 }
@@ -225,60 +224,70 @@ div#zone-submenu {
 	width:100%;
 }
 
+.front-top {
+	padding: 2em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 3em;
+	margin-bottom: 2em;
+}
+
+.front-top p {
+	font-size: 55px;
+}
+
+
+.front-top a {
+	background-color: #1faffa; /* rgb(31, 175, 250) */
+	padding: 0 2em;
+	font-size: 35px;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	right: 130px;
+}
+
+.front-top a:hover {
+	box-shadow: 0 0 3px 1px #999;
+}
+
+.blurb-wrapper {
+	float: left;
+	width: 33%;
+	margin: 0 auto;
+	padding: 0 3em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.front-blurb {
+
+}
+
+.front-blurb h2 {
+	text-align: center;
+	background-color: #c1c1c1;
+	color: white;
+	font-size: 2em;
+	padding: 0.6em;
+}
+
+.front-blurb p {
+	font-size: 1.4em;
+	background-color: white;
+	margin: 0;
+	padding: 1em;
+	border: 1px solid #c1c1c1;
+	color: #666;
+}
+
 div.openlayers-views-map {
-	border-top:2px solid #545454;
-	border-bottom:2px solid #545454;
-	margin-bottom:80px;
-}
-
-.front .block div#blurb1{
-	background:#545454;
-	margin:0 ;
-	height:500px;
-	padding-top:60px;
-}
-
-.front .block div#blurb1 h1.blurb {
-	text-align:center;
-	font-size:4.6em;
-	padding:0 100px;
-	line-height:1.1em;
-	color:#fafafa;
-}
-
-.front div#blurb1 h1.blurb a{
-	text-decoration:none;
-	color:#3d7ecb;
-}
-
-.front .block div#blurb2{
-	background:#6599d6;
-	margin:0;
-	height:460px;
-	padding-top:100px;
-}
-
-.front .block div#blurb2 h1.blurb {
-	text-align:center;
-	font-size:4.6em;
-	padding:0 260px;
-	line-height:1.1em;
-	color:#ff9900;
-}
-
-.front .block div#blurb3{
-	background:#d09651;
-	margin:0;
-	height:430px;
-	padding-top:100px;
-}
-
-.front .block div#blurb3 h1.blurb {
-	text-align:center;
-	font-size:4.6em;
-	padding:0 290px;
-	line-height:1.1em;
-	color:#8a3dcb;
+	border-top:3px solid #545454;
+	border-bottom:3px solid #545454;
+	margin: 4em 0;
 }
 
 /* ******************************* POSTSCRIPT ****************************** */
