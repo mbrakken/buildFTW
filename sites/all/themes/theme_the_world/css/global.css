@@ -4,10 +4,10 @@
 
 /* ***** PRELIMINARY VERSION ***** */
 
-@font-face{
+/*@font-face{
 	font-family:'Comfortaa';
 	font-family: 'Cabin';
-}
+}*/
 
 body.html {
 	margin:0;
@@ -18,7 +18,7 @@ body.html {
 }
 
 h1, h2, h3, h4, h5, h6, .field-label {
-	font-family:'Comfortaa','Trebuchet MS','Lucida Sans Unicode',sans-serif;
+	font-family:'Hevetica','Lucida Sans Unicode',sans-serif;
 	color:#7ECB3D;
     font-weight:300;
 }
@@ -35,7 +35,7 @@ p,
 body,
 p.cke_editable,
 body.cke_editable {
-	font-family:'Cabin',sans-serif;
+	font-family:'Helvetica',sans-serif;
 	font-size:1em;
 	color:#474747;
 	line-height:1.4em;
@@ -72,7 +72,7 @@ a:hover {
 }
 
 #zone-user a {
-	font-family:'Comfortaa','Trebuchet MS','Lucida Sans Unicode',sans-serif;
+	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
 	font-size:.9em;
 	text-decoration:none;
 	font-style: normal;
@@ -125,7 +125,7 @@ div#block-system-main-menu ul.menu li {
 }
 
 div#block-system-main-menu ul.menu li a {
-	font-family:'Comfortaa','Trebuchet MS','Lucida Sans Unicode',sans-serif;
+	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
 	font-size:21px;
   line-height:22px;
 	text-decoration:none;
@@ -173,7 +173,7 @@ div#zone-submenu {
 }
 
 #zone-submenu-wrapper .menu a {
-	font-family:'Comfortaa','Trebuchet MS','Lucida Sans Unicode',sans-serif;
+	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
 	font-size:1.3em;
 	color:#191919;
 	text-decoration:none;
@@ -1062,6 +1062,103 @@ html.js input.throbbing {
 
 /* ************** GENERAL FORMS STUFF ******************* */
 
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]  {
+	border: 1px solid #cdcdcd;
+	box-shadow: inset 0px 1px 2px #dcdcdc;
+	background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875em;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  height: 2.3125em;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #999999;
+  -moz-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
+  border-color: #999999;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  background: #fafafa;
+  border-color: #999999;
+  outline: none;
+}
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="month"][disabled],
+input[type="week"][disabled],
+input[type="email"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+textarea[disabled] {
+  background-color: #dddddd;
+}
+
+/*
 
 .form-item label,
 div.ctools-modal-content .form-item label {
@@ -1140,15 +1237,13 @@ div.form-type-managed-file div.description {
 	padding-left: 9.8em !important;
 }
 
-/*textarea,
-select,*/
 input[type="text"],
 input[type="password"],
 div.field-type-addressfield select {
 	padding:3px;
 	border:solid 1px #b6b6b6;
 	border-radius:1px;
-	font-family:'Cabin',sans-serif;
+	font-family:'Helvetica',sans-serif;
 	font-size:1em;
 	background: none no-repeat scroll -38px -22px, -moz-linear-gradient(center top , #EEEEEE 1%, #FFFFFF 15%) repeat scroll 0 0 transparent;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
@@ -1213,7 +1308,7 @@ div.field-type-addressfield div.form-item label {
 	clear: left;
 	margin-top: 0;
 }
-
+*/
 input[type="submit"],
 .form-managed-file .form-submit {
 	width: auto;
@@ -1226,7 +1321,7 @@ input[type="submit"],
 	background: -o-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #FFFFFF 0%,#DDDDDD 100%); /* IE10+ */
 	background: linear-gradient(top bottom, #FFFFFF 0%,#DDDDDD 100%); /* W3C */
-	font-family:'Comfortaa','Trebuchet MS','Lucida Sans Unicode',sans-serif;
+	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
 	font-size: 1em;
 	text-decoration: none;
 	text-shadow:none;
@@ -1243,7 +1338,7 @@ input[type="submit"]:hover,
 	background: -ms-linear-gradient(top, #FFFFFF 0%,#AAAAAA 100%); /* IE10+ */
 	background: linear-gradient(top bottom, #FFFFFF 0%,#AAAAAA 100%); /* W3C */
 }
-
+/*
 .form-managed-file .form-file {
 	font-size: 1.2em;
 	height: 1.66em;
@@ -1272,9 +1367,10 @@ div#edit-field-cc-license > div.form-item > label {
 div#edit-group-audience {
 	clear: left;
 }
-
+*/
 /* ************** CTOOLS AUTOMODAL FORMS ******************* */
 
+/*
 div.ctools-modal-content {
 	overflow: hidden;
 	width: auto;
@@ -1368,7 +1464,7 @@ div.openlayers-container-map-place-picker-map {
 div#edit-field-partner-email {
 	display: none;
 }
-
+*/
 /* ********************** ANY OTHER FORM STUFF ************************** */
 
 textarea.statuses-submit {
