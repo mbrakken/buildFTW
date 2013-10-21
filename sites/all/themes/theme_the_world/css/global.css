@@ -4,10 +4,10 @@
 
 /* ***** PRELIMINARY VERSION ***** */
 
-/*@font-face{
-	font-family:'Comfortaa';
-	font-family: 'Cabin';
-}*/
+@font-face{
+	font-family: 'Chunkfive';
+	src: url('Chunkfive.otf');
+}
 
 body.html {
 	margin:0;
@@ -18,9 +18,8 @@ body.html {
 }
 
 h1, h2, h3, h4, h5, h6, .field-label {
-	font-family:'Hevetica','Lucida Sans Unicode',sans-serif;
-	color:#7ECB3D;
-    font-weight:300;
+  font-family:'Chunkfive','Lucida Sans Unicode',sans-serif;*/
+	color: #333;
 }
 
 h1 {
@@ -42,6 +41,10 @@ body.cke_editable {
 	margin: 15px 0;
 }
 
+p.front-lead {
+	font-family: 'Chunkfive';
+}
+
 a {
 	color:#191919;
 }
@@ -53,7 +56,7 @@ a:hover {
 /* ************************** USER BAR ******************************* */
 
 #zone-user-wrapper{
-	background-color:#7ECB3D;
+	background-color:#333;
 	padding:3px 0;
 }
 
@@ -76,14 +79,15 @@ a:hover {
 	font-size:.9em;
 	text-decoration:none;
 	font-style: normal;
+	color: white;
 }
 
 #zone-user a:hover{
-	color:white;
+	color: #7ECB3D;
 }
 
 #zone-user li .active{
-	color:white;
+	color: #7ECB3D;
 }
 
 #zone-user #block-logintoboggan-logintoboggan-logged-in, #block-menu-menu-register-login{
@@ -100,58 +104,40 @@ a:hover {
 
 /* ****************************** BRANDING (currently empty) ************************ */
 
-#zone-branding-wrapper{
-	background-color:#545454;
-}
-
 /* ***** MAIN MENU ***** */
 
 
 #zone-menu-wrapper {
-	background-color:#545454;
-	padding:5px 0;
+}
+
+#region-menu {
+	padding: 10px 0;
 }
 
 div#block-system-main-menu{
 	display:inline-block;
 	float:left;
-	margin-top: 6px;
+	padding: 10px 0;
 }
 
 div#block-system-main-menu ul.menu li {
 	list-style: none;
 	display: inline-block;
-	margin: 0 0.5em 0 0;
 }
 
 div#block-system-main-menu ul.menu li a {
-	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
-	font-size:21px;
-  line-height:22px;
+	font-family:'Chunkfive','Lucida Sans Unicode',sans-serif;
 	text-decoration:none;
-	font-style: normal;
-	padding:6px 10px 0;
-	color:white;
+	color: #474747;
+	font-size: 1.8em;
 }
 
 #block-system-main-menu ul.menu a:hover {
-	background:#ABABAB;
-	border:solid;
-	border-color:#ababab;
-	border-width:0px;
-	border-radius: 15px 15px 0 0;
-	padding-top: 6px;
-	padding-bottom:6px;
+	border-bottom: 5px solid #474747;
 }
 
 div#block-system-main-menu ul.menu a.active {
-	color:#474747;
-	background:#fafafa;
-	padding-bottom:6px;
-	border:solid;
-	border-color:#fafafa;
-	border-width:1px;
-	border-radius: 15px 15px 0 0;
+	border-bottom: 5px solid #7ECB3D;
 }
 
 div#block-search-form {
@@ -234,7 +220,7 @@ div#zone-submenu {
 	font-size: 3em;
 	margin-bottom: 2em;
 	width: 90%;
-	max-width: 750px;
+	max-width: 880px;
 }
 
 .front-top p {
