@@ -373,3 +373,5 @@ settings[alpha_region_footer_second_css] = ''
 version = '7.x-3.1'
 project = 'omega'
 datestamp = '1329681647'
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts

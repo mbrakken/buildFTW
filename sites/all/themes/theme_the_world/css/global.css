@@ -9,6 +9,11 @@
 	src: url('Chunkfive.otf');
 }
 
+@font-face{
+	font-family: 'CreteRound';
+	src: url('CreteRound-Regular.otf');
+}
+
 body.html {
 	margin:0;
 }
@@ -23,7 +28,8 @@ h1, h2, h3, h4, h5, h6, .field-label {
 }
 
 h1 {
-	font-size:24px;
+	font-size: 2.4em;
+	line-height: 2.2em
 }
 
 h2 {
@@ -34,7 +40,7 @@ p,
 body,
 p.cke_editable,
 body.cke_editable {
-	font-family:'Helvetica',sans-serif;
+	font-family:'CreteRound',sans-serif;
 	font-size:1em;
 	color:#474747;
 	line-height:1.4em;
@@ -75,7 +81,7 @@ a:hover {
 }
 
 #zone-user a {
-	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
+	font-family:'CreteRound','Lucida Sans Unicode',sans-serif;
 	font-size:.9em;
 	text-decoration:none;
 	font-style: normal;
@@ -144,6 +150,25 @@ div#block-search-form {
 	float: right;
 }
 
+div#block-search-form input {
+	width: 250px;
+	font-size: 1.3em;
+	color: #999;
+}
+
+#block-search-form input.form-submit {
+	background: url(../images/spyglass_gray.png) no-repeat center center !important;
+	top: 4px;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	border: none;
+	position: absolute;
+	color: transparent;
+}
+
+
+
 /* ************************ SUBMENU ********************************** */
 
 div#zone-submenu {
@@ -159,7 +184,7 @@ div#zone-submenu {
 }
 
 #zone-submenu-wrapper .menu a {
-	font-family:'Helvetica','Lucida Sans Unicode',sans-serif;
+	font-family:'CreteRound','Lucida Sans Unicode',sans-serif;
 	font-size:1.3em;
 	color:#191919;
 	text-decoration:none;
@@ -258,7 +283,7 @@ div#zone-submenu {
 
 .front-blurb h2 {
 	text-align: center;
-	background-color: #c1c1c1;
+	background-color: #aaa;
 	color: white;
 	font-size: 2em;
 	padding: 0.6em;
@@ -905,7 +930,36 @@ div.pane-quicktabs-reports{
 	padding:0 3px;
 }
 
-.bef-select-as-links .form-type-bef-link a{
+.bef-select-as-links,
+.views-reset-button {
+	text-align: center;
+}
+
+.bef-select-as-links .form-item,
+.views-reset-button input {
+	margin: 1.5em 0;
+}
+
+.bef-select-as-links a,
+.views-reset-button input {
+	text-decoration: none;
+  color: #999;
+  font-size: 1.4em;
+  padding: 5px 15px;
+  border-radius: 2px;
+  background-color: #fafafa;
+}
+
+.bef-select-as-links a:hover,
+.views-reset-button input {
+	box-shadow: 1px 1px 5px #aaa;
+}
+
+.bef-select-as-links .selected a {
+	box-shadow: inset 1px 1px 5px #aaa;
+}
+
+/*.bef-select-as-links .form-type-bef-link a{
 	text-decoration:none;
 	color:#474747;
 }
@@ -920,7 +974,7 @@ div.pane-quicktabs-reports{
 
 .bef-select-as-links .form-item .form-item.selected a{
 
-}
+}*/
 
 #edit-field-project-address-locality-wrapper{
 	margin-top:15px;
@@ -1142,6 +1196,10 @@ input[type="time"][disabled],
 input[type="url"][disabled],
 textarea[disabled] {
   background-color: #dddddd;
+}
+
+input#edit-search-block-form--2 {
+	margin: 0;
 }
 
 /*
