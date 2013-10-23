@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Default view template to display items in a jQuery Masonry grid.
+ * Default view template to display content in a Masonry layout.
  */
 ?>
 

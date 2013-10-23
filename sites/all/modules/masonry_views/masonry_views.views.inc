@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Views-specific implementations and functions.
+ * Provide views data and handlers for masonry_views.module.
  */
 
 /**
@@ -10,11 +10,11 @@
 function masonry_views_views_plugins() {
   return array(
     'style' => array(
-      'masonry_views_grid' => array(
-        'title' => t('Masonry grid'),
-        'handler' => 'views_plugin_style_masonry_views_grid',
+      'masonry_views' => array(
+        'title' => t('Masonry'),
+        'handler' => 'views_plugin_style_masonry_views',
         'uses options' => TRUE,
-        'help' => t("Display content in a jQuery Masonry grid."),
+        'help' => t("Display content in a Masonry layout."),
         'theme' => 'views_view_masonry',
         'type' => 'normal',
         'uses row plugin' => TRUE,
