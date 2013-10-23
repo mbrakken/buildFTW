@@ -140,7 +140,7 @@ div#block-system-main-menu ul.menu li a {
 	font-family:'Chunkfive','Lucida Sans Unicode',sans-serif;
 	text-decoration:none;
 	color: #545454;
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 #block-system-main-menu ul.menu a:hover {
@@ -153,6 +153,10 @@ div#block-system-main-menu ul.menu a.active {
 
 div#block-search-form {
 	float: right;
+}
+
+form[id="search-block-form"] {
+	position: relative;
 }
 
 div#block-search-form input {

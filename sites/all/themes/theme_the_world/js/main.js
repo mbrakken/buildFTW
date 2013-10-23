@@ -4,10 +4,10 @@
       if ($(window).width() > 720) {
         var headfix = $('.views-exposed-widgets');
         $(window).scroll(function() {
-          if ($(this).scrollTop() > (200) && $(headfix.css('position') == 'static')) {
+          if ($(this).scrollTop() > (160) && $(headfix.css('position') == 'static')) {
             headfix.addClass('fixed');
             $('.grid-9.region.region-content').addClass('fixed');
-          } else if ($(this).scrollTop() <= (200) && headfix.hasClass('fixed')) {
+          } else if ($(this).scrollTop() <= (160) && headfix.hasClass('fixed')) {
             headfix.removeClass('fixed');
             $('.grid-9.region.region-content').removeClass('fixed');
           };
