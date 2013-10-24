@@ -343,15 +343,15 @@ div.openlayers-views-map {
 /* ***** FOOTER ***** */
 
 footer#section-footer{
-	background-color:#545454;
-	padding-bottom:0;
-	padding-top:15px;
+	background-color:#333;
+	padding: 0;
 	margin-top:15px;
 }
 
-footer#section-footer p, footer#section-footer span {
+footer#section-footer p {
 	color:white;
 	font-size:.8em;
+	text-align: center;
 }
 
 footer#section-footer a{
@@ -363,33 +363,8 @@ footer#section-footer a:hover{
 	text-decoration:underline;
 }
 
-footer#section-footer .block-menu{
-	display:inline;
-	position:relative;
-	float:left;
-	margin-right:50px;
-}
 
-footer#section-footer .block-menu li{
-	font-size:.8em;
-	list-style:none;
-}
 
-#block-system-powered-by{
-	display:inline-block;
-	position:relative;
-	float:right;
-}
-
-div#block-block-11 {
-	display:inline;
-	position:relative;
-	float:right;
-}
-
-#google_translate_element div{
-	color:white;
-}
 
 .edit-field-tags-und-autocomplete-aria-live{
 	top:10px;
