@@ -140,7 +140,7 @@ div#block-system-main-menu ul.menu li a {
 	font-family:'Chunkfive','Lucida Sans Unicode',sans-serif;
 	text-decoration:none;
 	color: #545454;
-	font-size: 1.7em;
+	font-size: 1.4em;
 }
 
 #block-system-main-menu ul.menu a:hover {
@@ -864,6 +864,7 @@ div.pane-quicktabs-reports{
 	position: fixed;
 	top: 60px;
 	margin-top: 0;
+	width: 21%;
 }
 
 .page-projects .grid-9.region.region-content.fixed,
@@ -884,7 +885,7 @@ div.pane-quicktabs-reports{
 	margin: 0.5em 0;
 	text-decoration: none;
   color: #999;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: #fafafa;
 }
 
