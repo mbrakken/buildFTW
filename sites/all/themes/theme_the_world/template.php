@@ -33,67 +33,79 @@
  * }
  *
  */
-?>
-<?php
 
-function theme_the_world_item_list($vars) {
-  $items = $vars['items'];
-  $title = $vars['title'];
-  $type = $vars['type'];
-  $attributes = $vars['attributes'];
+// Register user/register and user login pages as templates
 
-  $output = '<div class="item-list">';
-  if (isset($title)) {
-    $output .= '<h3>' . $title . '</h3>';
-  }
-
-  if (!empty($items)) {
-    $output .= "<$type" . drupal_attributes($attributes) . '>';
-    $num_items = count($items);
-
-    foreach ($items as $i => $item) {
-      $attributes = array();
-      $children = array();
-      if (is_array($item)) {
-        foreach ($item as $key => $value) {
-          if ($key == 'data') {
-            $data = $value;
-          }
-          elseif ($key == 'children') {
-            $children = $value;
-          }
-          else {
-            $attributes[$key] = $value;
-          }
-        }
-      }
-      else {
-        $data = $item;
-      }
-
-      if (count($children) > 0) {
-        // Render nested list.
-        $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
-      }
-
-      if ($i == 0) {
-        $attributes['class'][] = 'donkey';
-      }
-
-      if ($i == $num_items - 1) {
-        $attributes['class'][] = 'banana';
-      }
-
-
-      $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>";
-    }
-
-    $output .= "</$type>";
-  }
-
-  $output .= '</div>';
-
-  return $output;
+function theme_the_world_theme($existing, $type, $theme, $path){
+  return array(
+    'user_register' => array(
+      'render element' => 'form',
+      'template' => 'templates/user-register',
+    ),
+    'user_login' => array(
+      'render element' => 'form',
+      'template' => 'templates/user-login',
+    ),
+  );
 }
-?>
+
+// function theme_the_world_item_list($vars) {
+//   $items = $vars['items'];
+//   $title = $vars['title'];
+//   $type = $vars['type'];
+//   $attributes = $vars['attributes'];
+
+//   $output = '<div class="item-list">';
+//   if (isset($title)) {
+//     $output .= '<h3>' . $title . '</h3>';
+//   }
+
+//   if (!empty($items)) {
+//     $output .= "<$type" . drupal_attributes($attributes) . '>';
+//     $num_items = count($items);
+
+//     foreach ($items as $i => $item) {
+//       $attributes = array();
+//       $children = array();
+//       if (is_array($item)) {
+//         foreach ($item as $key => $value) {
+//           if ($key == 'data') {
+//             $data = $value;
+//           }
+//           elseif ($key == 'children') {
+//             $children = $value;
+//           }
+//           else {
+//             $attributes[$key] = $value;
+//           }
+//         }
+//       }
+//       else {
+//         $data = $item;
+//       }
+
+//       if (count($children) > 0) {
+//         // Render nested list.
+//         $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
+//       }
+
+//       if ($i == 0) {
+//         $attributes['class'][] = 'donkey';
+//       }
+
+//       if ($i == $num_items - 1) {
+//         $attributes['class'][] = 'banana';
+//       }
+
+
+//       $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>";
+//     }
+
+//     $output .= "</$type>";
+//   }
+
+//   $output .= '</div>';
+
+//   return $output;
+// }
 

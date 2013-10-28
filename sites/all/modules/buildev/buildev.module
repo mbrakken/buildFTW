@@ -4,10 +4,20 @@
 //print_r($links);
 //print '</pre>';
 
+// make a theme function for the registration form
+
+function buildev_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  $form['#theme'] = 'user_register';
+}
+
+// function theman_login_form_user_login_form_alter(&$form, &$form_state, $form_id) {
+//   $form['#theme'] = 'user_login';
+// }
+
 // hook_menu_alter
 
 // hook_form_alter
- 
+
 function buildev_form_alter(&$form, &$form_state, $form_id) {
 	if($form_id == 'project_node_form'){
 //		print '<pre>';
@@ -56,4 +66,4 @@ function buildev_form_alter(&$form, &$form_state, $form_id) {
 			),
 		);
 	}
-}	
+}
