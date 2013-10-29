@@ -14,5 +14,27 @@
         });
       };
     });
-  }
+  };
+
+  if ($('body').hasClass('node-type-project')) {
+    $('#group-read-more').click(function() {
+      $('div.pane-node-body').slideToggle("600");
+      return false;
+    });
+
+    $(function() {
+      var titlefix = $('.pane-delta-blocks-page-title');
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > (200) && $(titlefix.css('position') == 'static')) {
+          titlefix.addClass('fixed');
+          $('#zone-content').addClass('fixed');
+          $('.pane-node-field-donate-link').addClass('fixed');
+        } else if ($(this).scrollTop() <= (200) && titlefix.hasClass('fixed')) {
+          titlefix.removeClass('fixed');
+          $('#zone-content').removeClass('fixed');
+          $('.pane-node-field-donate-link').removeClass('fixed');
+        };
+      });
+    });
+  };
 });})(jQuery);

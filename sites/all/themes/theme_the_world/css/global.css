@@ -32,19 +32,16 @@ h1 {
 	line-height: 2.2em
 }
 
+h1,
 h2 {
-  font-weight:300;
+  font-weight: normal;
 }
 
-p,
-body,
-p.cke_editable,
-body.cke_editable {
+p, body {
 	font-family:'CreteRound',sans-serif;
 	font-size:1em;
 	color:#545454;
-	line-height:1.4em;
-	margin: 15px 0;
+	line-height:1.5em;
 }
 
 p.front-lead {
@@ -342,19 +339,125 @@ footer#section-footer a:hover{
 /* *********** PROJECT PROFILE PAGES AND RELATED BITS  ********* */
 
 
+.node-type-project #zone-content {
+	margin-top: 0;
+}
+
+.node-type-project #zone-content.fixed {
+	margin-top: 5em;
+}
+
 .node-type-project #page-title{
 	font-size:2.4em;
-	padding:10px;
+}
+
+.node-type-project .pane-delta-blocks-page-title {
+	position: static;
+}
+
+.node-type-project .pane-delta-blocks-page-title.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0px;
+	padding: 10px 0px 10px 60px;
+	background-color: #333;
+	box-shadow: 0px 2px 5px rgb(204, 204, 204);
+	z-index: 10;
+}
+
+.node-type-project .pane-delta-blocks-page-title.fixed #page-title {
+	font-size: 20px;
+	line-height: 1.2em;
+	color: #fff;
+}
+
+div.proj-button{
+	display:inline-block;
+	position:relative;
+	float: left;
+	margin-right: 20px;
+}
+
+.proj-button a {
+	display:block;
+	text-align:center;
+	padding:10px 0;
+	width:100px;
+	text-decoration: none;
+	background: #80EA4B;
+	cursor: pointer;
+}
+
+.proj-button a:hover {
+	box-shadow: 0 2px 5px 0 #666;
+	color: #191919;
+}
+
+.proj-button a:active {
+	box-shadow: inset 0 2px 5px 0 #666;
+	color:#191919;
+}
+
+.proj-button .field-type-list-boolean .field-item {
+	display:block;
+	text-align:center;
+	padding:10px 0;
+	width:100px;
+	background: #545454;
+	color: #80EA4B;
+}
+
+.pane-node-field-donate-link {
+	position: static;
+}
+
+.pane-node-field-donate-link.fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 11;
+	right: 20px;
+}
+
+.pane-node-field-donate-link.fixed a {
+	padding: 3px;
+	width: 80px;
+	margin: 7px 0px;
+}
+
+.read-more {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.read-more a {
+	text-decoration: none;
+}
+
+.read-more a:hover {
+	color: #191919;
+	text-decoration: underline;
 }
 
 .pane-node-field-project-short-description {
-	float: left;
 	font-size: 1.8em;
 	line-height: 1.3em;
 	text-align: center;
+	margin-top: 50px;
+}
+
+.pane-node-body {
+	padding: 30px 50px;
+	line-height: 1.5em;
+	display: none;
+	margin: 1em 0;
+	box-shadow: 0 2px 5px #999;
 }
 
 /* *** SIDEBAR ***  */
+
+
+/*
 
 #project-profile-map {
 	border:solid 2px #545454;
@@ -414,39 +517,24 @@ div.pane-node-flag-follow-group-count{
 	clear: left;
 }
 
+*/
+
 /* ***** MAIN PROJECT CONTENT *****  */
 
 
-div.proj-button{
-	display:inline-block;
-	position:relative;
-	float:left;
-}
+
+
+/*
 
 div.pane-entity-field.proj-button {
 	margin-bottom: 22px;
 }
 
-.proj-button a {
-	display:block;
-	text-align:center;
-	padding:10px 0;
-	width:100px;
-	text-decoration: none;
-	margin:12px 25px 0 0;
-	background: #80EA4B;
-	cursor: pointer;
-}
+*/
 
-.proj-button .field-type-list-boolean .form-item{
-	display:block;
-	text-align:center;
-	padding:10px 0;
-	width:100px;
-	background: #545454;
-	color: #80EA4B;
-	margin:12px 25px 0 0;
-}
+/*
+
+
 
 .node-type-project .flag-throbber,
 .node-type-project .flag-message {
@@ -560,6 +648,8 @@ div.pane-quicktabs-reports{
 #quicktabs-container-reports {
 	padding:15px;
 }
+
+*/
 
 /* ***** LOG BOOK UPDATE ***** */
 
@@ -887,12 +977,12 @@ div.pane-quicktabs-reports{
   color: #999;
   font-size: 1em;
   background-color: #fafafa;
+  float: right;
 }
 
 .bef-select-as-radios label:hover {
 	border-bottom: 3px solid #aaa;
 	cursor: pointer;
-	text-shadow: 1px 2px 5px #999;
 }
 
 .bef-select-as-radios label:active {
