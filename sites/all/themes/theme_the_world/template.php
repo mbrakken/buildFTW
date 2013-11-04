@@ -49,63 +49,21 @@ function theme_the_world_theme($existing, $type, $theme, $path){
   );
 }
 
-// function theme_the_world_item_list($vars) {
-//   $items = $vars['items'];
-//   $title = $vars['title'];
-//   $type = $vars['type'];
-//   $attributes = $vars['attributes'];
+// Make field_background_image on projects the background image if it exists
 
-//   $output = '<div class="item-list">';
-//   if (isset($title)) {
-//     $output .= '<h3>' . $title . '</h3>';
-//   }
+function theme_the_world_preprocess_page(&$vars) {
+  $node = menu_get_object();
+  if ($node->nid) {
+    // We're on a node page
+    if (isset($node->field_background_image[$node->language][0]['fid'])) {
+      // Load the file object
+      $file = file_load($node->field_background_image[$node->language][0]['fid']);
 
-//   if (!empty($items)) {
-//     $output .= "<$type" . drupal_attributes($attributes) . '>';
-//     $num_items = count($items);
+      // Get a web accessible URL for the image
+      $path = file_create_url($file->uri);
 
-//     foreach ($items as $i => $item) {
-//       $attributes = array();
-//       $children = array();
-//       if (is_array($item)) {
-//         foreach ($item as $key => $value) {
-//           if ($key == 'data') {
-//             $data = $value;
-//           }
-//           elseif ($key == 'children') {
-//             $children = $value;
-//           }
-//           else {
-//             $attributes[$key] = $value;
-//           }
-//         }
-//       }
-//       else {
-//         $data = $item;
-//       }
-
-//       if (count($children) > 0) {
-//         // Render nested list.
-//         $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
-//       }
-
-//       if ($i == 0) {
-//         $attributes['class'][] = 'donkey';
-//       }
-
-//       if ($i == $num_items - 1) {
-//         $attributes['class'][] = 'banana';
-//       }
-
-
-//       $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>";
-//     }
-
-//     $output .= "</$type>";
-//   }
-
-//   $output .= '</div>';
-
-//   return $output;
-// }
-
+      // Add the background to an inline CSS tag
+      drupal_add_css('#inside-top { background:url(' . $path . ') left top no-repeat !important; }', 'inline');
+    }
+  }
+}
