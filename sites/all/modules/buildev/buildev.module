@@ -1,9 +1,5 @@
 <?php
 
-//print '<pre>';
-//print_r($links);
-//print '</pre>';
-
 // make a theme function for the registration form
 
 function buildev_form_user_register_form_alter(&$form, &$form_state, $form_id) {
@@ -14,15 +10,10 @@ function buildev_form_user_register_form_alter(&$form, &$form_state, $form_id) {
 //   $form['#theme'] = 'user_login';
 // }
 
-// hook_menu_alter
-
 // hook_form_alter
 
 function buildev_form_alter(&$form, &$form_state, $form_id) {
 	if($form_id == 'project_node_form'){
-//		print '<pre>';
-//		print_r($form);
-//		print '</pre>';
     	$node = $form_state['node'];
 // Makes form to add a new project smaller while keeping edit project full
     	if (!isset($node->nid) || isset($node->is_new)) {
@@ -65,5 +56,10 @@ function buildev_form_alter(&$form, &$form_state, $form_id) {
 				),
 			),
 		);
+	}
+	if($form_id == 'article_node_form') {
+		$form['title']['#attributes']['placeholder'] = t('Title');
+		$form['body']['und']['0']['value']['#attributes']['placeholder'] = t('Body');
+		$form['field_tags']['und']['#attributes']['placeholder'] = t('Tag1, Tag Two, Tag 3');
 	}
 }
